@@ -1,0 +1,404 @@
+/* Основні стилі */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+  }
+  
+  /* Стилі для табів */
+  .tabs {
+    max-width: 800px;
+    margin: 20px auto;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+  }
+  
+  .tabs-menu {
+    display: flex;
+    background-color: #0078d7;
+  }
+  
+  .tab-button {
+    flex: 1;
+    padding: 15px;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background: none;
+    transition: background 0.3s;
+  }
+  
+  .tab-button:hover,
+  .tab-button.active {
+    background-color: #005a9e;
+  }
+  
+  /* Стилі для Tab 1 - Червоний/Чорний */
+  #tab1 .tabs-menu {
+    background-color: #e74c3c;
+  }
+  
+  #tab1 .tab-button {
+    color: #fff;
+  }
+  
+  #tab1 .tab-button.active {
+    background-color: #c0392b;
+  }
+  
+  #tab1 .tab-content {
+    background-color: #f2f2f2;
+  }
+  
+  /* Стилі для Tab 2 - Синій/Білий */
+  #tab2 .tabs-menu {
+    background-color: #3498db;
+  }
+  
+  #tab2 .tab-button {
+    color: #fff;
+  }
+  
+  #tab2 .tab-button.active {
+    background-color: #2980b9;
+  }
+  
+  #tab2 .tab-content {
+    background-color: #ecf0f1;
+  }
+  
+  /* Стилі для Tab 3 - Зелений */
+  #tab3 .tabs-menu {
+    background-color: #2ecc71;
+  }
+  
+  #tab3 .tab-button {
+    color: #fff;
+  }
+  
+  #tab3 .tab-button.active {
+    background-color: #27ae60;
+  }
+  
+  #tab3 .tab-content {
+    background-color: #f0f8f0;
+  }
+  
+  /* Стилі для контенту */
+  .tabs-content {
+    padding: 20px;
+  }
+  
+  .tab-content {
+    display: none;
+  }
+  
+  .tab-content.active {
+    display: block;
+  }
+  
+  /* Стилі для форми */
+  .form {
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fdfdfd;
+  }
+  
+  .form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  .form input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+  }
+  
+  .form button {
+    padding: 10px 15px;
+    background-color: #0078d7;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background 0.3s;
+  }
+  
+  .form button:hover {
+    background-color: #005a9e;
+  }
+  
+  /* Стилі для таблиці */
+  .data-display {
+    margin-top: 20px;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 10px;
+  }
+  
+  table th,
+  table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  table th {
+    background-color: #0078d7;
+    color: white;
+  }
+  
+  .total {
+    text-align: right;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  /* Стилі для фільтра */
+  .filter {
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f7f7f7;
+  }
+  
+  .filter h3 {
+    margin-top: 0;
+  }
+  
+  .filter label {
+    display: inline-block;
+    margin-right: 10px;
+    font-weight: bold;
+  }
+  
+  .filter input {
+    padding: 5px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .filter button {
+    padding: 8px 12px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    transition: background 0.3s;
+  }
+  
+  .filter button:hover {
+    background-color: #218838;
+  }
+  
+  .clear-button {
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background 0.3s;
+    margin-top: 10px;
+  }
+  
+  .clear-button:hover {
+    background-color: #c82333;
+  }
+  
+  /* Стилі для загальної суми */
+  .total-summary {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 18px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  /* Базові стилі (залишаються без змін) */
+
+/* Адаптація для мобільних пристроїв (ширина екрана до 600px) */
+@media (max-width: 600px) {
+    body {
+      font-size: 14px; /* Зменшення розміру шрифта для мобільних */
+    }
+  
+    .tabs {
+      max-width: 100%; /* Забезпечує ширину табів на весь екран */
+      margin: 10px; /* Зменшуємо відступи */
+    }
+  
+    .tabs-menu {
+      flex-direction: column; /* Перехід на вертикальне меню табів */
+    }
+  
+    .tab-button {
+      padding: 10px; /* Зменшуємо відступи на кнопках */
+      font-size: 16px; /* Зменшуємо розмір шрифта на кнопках */
+    }
+  
+    .tab-button.active {
+      background-color: #c0392b; /* Темніший колір для активної кнопки */
+    }
+  
+    .tabs-content {
+      padding: 15px; /* Зменшення внутрішніх відступів контенту */
+    }
+  
+    .form input {
+      padding: 8px; /* Менші відступи для полів введення */
+    }
+  
+    .form button {
+      padding: 8px 12px; /* Зменшуємо розміри кнопки */
+    }
+  
+    .data-display table {
+      font-size: 14px; /* Зменшуємо шрифт в таблиці */
+    }
+  
+    .data-display table th,
+    .data-display table td {
+      padding: 8px; /* Зменшуємо відступи в таблиці */
+    }
+  
+    .filter input {
+      width: 100%; /* Розтягуємо поля фільтра на весь екран */
+    }
+  
+    .clear-button {
+      width: 100%; /* Кнопка очищення на весь екран */
+      margin-top: 10px;
+    }
+  
+    .total-summary {
+      position: static; /* Відміняємо фіксоване положення для мобільних */
+      margin-top: 15px; /* Додаємо відступи зверху */
+      font-size: 16px; /* Зменшуємо шрифт */
+    }
+  }
+  
+  /* Адаптація для планшетів (ширина екрана від 600px до 1024px) */
+  @media (min-width: 600px) and (max-width: 1024px) {
+    .tabs {
+      max-width: 90%; /* Таблиці займають більшу частину екрану */
+      margin: 20px auto; /* Центруємо таби */
+    }
+  
+    .tabs-menu {
+      flex-direction: row; /* Відображення меню табів в ряд */
+    }
+  
+    .tab-button {
+      padding: 12px; /* Зменшення відступів на планшетах */
+      font-size: 18px; /* Збільшення розміру шрифта для кнопок */
+    }
+  
+    .tabs-content {
+      padding: 20px; /* Невеликі відступи для контенту */
+    }
+  
+    .form input {
+      padding: 10px; /* Збільшення відступів в полях введення */
+    }
+  
+    .form button {
+      padding: 10px 15px; /* Збільшення кнопки */
+    }
+  
+    .data-display table th,
+    .data-display table td {
+      padding: 10px; /* Збільшуємо відступи в таблиці */
+    }
+  
+    .filter input {
+      width: 100%; /* Розтягуємо поля фільтра на весь екран */
+    }
+  
+    .clear-button {
+      width: 100%; /* Кнопка очищення на весь екран */
+      margin-top: 15px;
+    }
+  
+    .total-summary {
+      font-size: 18px; /* Збільшення шрифта для загальної суми */
+    }
+  }
+  
+  /* Адаптація для великих екранів (ширина екрана більше 1024px) */
+  @media (min-width: 1024px) {
+    .tabs {
+      max-width: 800px; /* Встановлюємо максимальну ширину для великих екранів */
+      margin: 20px auto;
+    }
+  
+    .tabs-menu {
+      flex-direction: row; /* Відображення меню табів в ряд */
+    }
+  
+    .tab-button {
+      padding: 15px; /* Збільшення відступів на великих екранах */
+      font-size: 20px; /* Збільшення шрифта для кнопок */
+    }
+  
+    .tabs-content {
+      padding: 20px; /* Невеликі відступи для контенту */
+    }
+  
+    .form input {
+      padding: 12px; /* Більші поля для введення */
+    }
+  
+    .form button {
+      padding: 12px 20px; /* Збільшення кнопок */
+    }
+  
+    .data-display table th,
+    .data-display table td {
+      padding: 12px; /* Збільшуємо відступи в таблиці */
+    }
+  
+    .filter input {
+      width: 100%; /* Поля фільтра на весь екран */
+    }
+  
+    .clear-button {
+      width: 100%; /* Кнопка очищення на весь екран */
+      margin-top: 15px;
+    }
+  
+    .total-summary {
+      font-size: 20px; /* Збільшуємо шрифт загальної суми */
+    }
+  }
+  
